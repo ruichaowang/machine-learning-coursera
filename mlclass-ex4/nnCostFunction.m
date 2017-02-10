@@ -115,24 +115,10 @@ tridelta_2=0;
 %               the regularization separately and then add them to Theta1_grad
 %               and Theta2_grad from Part 2.
 %
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Theta1(:,1) = 0;% set theta1 collum1 to zero.
+Theta2(:,1) = 0;% set theta2 collum1 to zero.
+Theta1_grad=(1/m).*(tridelta_1+lambda.*Theta1);%regularization
+Theta2_grad=(1/m).*(tridelta_2+lambda.*Theta2);%regularization
 
 % -------------------------------------------------------------
 
